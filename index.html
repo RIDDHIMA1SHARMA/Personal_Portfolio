@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #faf6f2;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    header, nav {
+      text-align: center;
+      padding: 20px 0;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #2a7ae2;
+      font-weight: bold;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
+    }
+    .project-card {
+      background: #fff9f0;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .project-card h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+      color: #2a7ae2;
+    }
+    .buttons {
+      margin-top: 15px;
+    }
+    .buttons a {
+      text-decoration: none;
+      background-color: #e3e3e3;
+      color: #000;
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin-right: 8px;
+      font-size: 0.9em;
+      transition: background-color 0.3s;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .buttons a:hover {
+      background-color: #d1d1d1;
+    }
+
+    /* Article Styling */
+    .article-section {
+      display: none;
+      margin-top: 50px;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 0.5s;
+    }
+    .article-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .article-section a {
+      color: #2a7ae2;
+      text-decoration: none;
+    }
+    .article-section a:hover {
+      text-decoration: underline;
+    }
+    .article-section h1, .article-section h2 {
+      color: #2a7ae2;
+    }
+    .back-button {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: #2a7ae2;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-button:hover {
+      background-color: #1c5abf;
+    }
+
+    /* Smooth Fade-in Animation */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Projects</h1>
+  <p>Open-source projects I've built, including apps, websites, and tools.</p>
+</header>
+
+<nav>
+  <a href="www.linkedin.com/in/riddhima-sharma-894100297" target="_blank">LinkedIn</a>
+  <a href="https://github.com/RIDDHIMA1SHARMA" target="_blank">GitHub</a>
+  <a href="#about" onclick="showSection('about')">About</a>
+</nav>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+
+  <div class="project-card">
+    <h2>Laptop Price Predictor!</h2>
+    <p>The source code and implementation.</p>
+    <div class="buttons">
+      <a onclick="showSection('article-laptop-price-predictor')">Article</a>
+      <a href="https://riddhima1sharma.github.io/Laptop-Price-Predictor/" target="_blank">Demo</a>
+      <a href="https://github.com/RIDDHIMA1SHARMA/Navigating-the-Laptop-Landscape-for-students" target="_blank">Source</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h2>Prediction Of Gestational Diabetes Mellitus</h2>
+    <p>Early Prediction of GDM.</p>
+    <div class="buttons">
+      <a onclick="showSection('article-gestational-diabetes')">Article</a>
+      <a href="https://riddhima1sharma.github.io/Prediction_Of_Gestational_Diabetes_Mellitus/" target="_blank">Demo</a>
+      <a href="https://github.com/RIDDHIMA1SHARMA/Prediction_Of_Gestational_Diabetes_Mellitus" target="_blank">Source</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h2>Personal Portfolio Website</h2>
+    <p>A beautiful and responsive website to showcase my work.</p>
+    <div class="buttons">
+      <a onclick="showSection('article-portfolio-website')">Article</a>
+      <a href="https://your-demo-link.com" target="_blank">Demo</a>
+      <a href="https://github.com/RIDDHIMA1SHARMA/Personal_Portfolio/new/main" target="_blank">Source</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h2>Smart Irrigation System</h2>
+    <p>IoT-based intelligent watering system for farms and gardens.</p>
+    <div class="buttons">
+      <a onclick="showSection('article-smart-irrigation')">Article</a>
+      <a href="https://your-demo-link.com" target="_blank">Demo</a>
+      <a href="https://github.com/yourgithubrepo" target="_blank">Source</a>
+    </div>
+  </div>
+  <!-- Add inside the <section id="projects" class="projects"> where other project-cards are -->
+<!-- New Project Cards -->
+
+<div class="project-card">
+  <h2>Detection of Diabetic Retinopathy</h2>
+  <p>Deep learning approach for early detection of diabetic eye disease.</p>
+  <div class="buttons">
+    <a onclick="showSection('article-diabetic-retinopathy')">Article</a>
+    <a href="https://github.com/RIDDHIMA1SHARMA/Diabetic_Retinopathy_Detection/blob/main/betic-retinopathy-detection-actual%5B1%5D-1.pdf" target="_blank">Demo</a>
+    <a href="https://github.com/RIDDHIMA1SHARMA/Diabetic_Retinopathy_Detection" target="_blank">Source</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <h2>Real World Routing Optimization</h2>
+  <p>Solving real-world pathfinding and logistics problems using optimization algorithms.</p>
+  <div class="buttons">
+    <a onclick="showSection('article-routing-optimization')">Article</a>
+    <a href="https://github.com/RIDDHIMA1SHARMA/Routing_Optimization_Problem_Using_Python/blob/main/cn.py" target="_blank">Demo</a>
+    <a href="https://github.com/RIDDHIMA1SHARMA/Routing_Optimization_Problem_Using_Python" target="_blank">Source</a>
+  </div>
+</div>
+<!-- New Project Cards -->
+
+<div class="project-card">
+  <h2>IoT Based Smart Shopping Cart</h2>
+  <p>Automated billing and cart tracking system for a seamless shopping experience.</p>
+  <div class="buttons">
+    <a onclick="showSection('article-smart-shopping-cart')">Article</a>
+    <a href="https://github.com/RIDDHIMA1SHARMA/IoT-based-Smart-Shopping-Cart-using-RFID-and-NodeMCU/blob/main/File.c" target="_blank">Demo</a>
+    <a href="https://github.com/RIDDHIMA1SHARMA/IoT-based-Smart-Shopping-Cart-using-RFID-and-NodeMCU" target="_blank">Source</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <h2>Electricity Bill Management System</h2>
+  <p>Track, predict, and optimize your monthly electricity usage and billing.</p>
+  <div class="buttons">
+    <a onclick="showSection('article-electricity-bill')">Article</a>
+    <a href="https://github.com/RIDDHIMA1SHARMA/Electricity_Bill_Management_System/blob/main/Code.sql" target="_blank">Demo</a>
+    <a href="https://github.com/RIDDHIMA1SHARMA/Electricity_Bill_Management_System" target="_blank">Source</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <h2>Smart IoT Based Agriculture System</h2>
+  <p>Advanced IoT system for monitoring and optimizing farm conditions in real time.</p>
+  <div class="buttons">
+    <a onclick="showSection('article-smart-agriculture')">Article</a>
+    <a href="https://github.com/RIDDHIMA1SHARMA/Smart_Iot_Based_Agriculture_System/blob/main/file.cpp" target="_blank">Demo</a>
+    <a href="https://github.com/RIDDHIMA1SHARMA/Smart_Iot_Based_Agriculture_System" target="_blank">Source</a>
+  </div>
+</div>
+<div class="project-card">
+  <h2>Skin Cancer Detection System</h2>
+  <p>AI-powered system for early detection of skin cancer using image classification techniques.</p>
+  <div class="buttons">
+    <a onclick="showSection('article-skin-cancer')">Article</a>
+    <a href="https://your-demo-link.com" target="_blank">Demo</a>
+    <a href="https://github.com/yourgithubrepo" target="_blank">Source</a>
+  </div>
+</div>
+
+
+
+
+</section>
+
+<!-- About Section -->
+<section id="about" class="article-section">
+  <h1>About Me</h1>
+  <p>Hello! I'm Riddhima Sharma, a passionate developer enthusiastic about AI, IoT, and web technologies. 🚀</p>
+  <p>I enjoy building intelligent systems that can make people's lives easier, and I'm constantly learning and improving my skills. Let's connect and create something awesome together!</p>
+
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+
+<!-- Article 1: Laptop Price Predictor -->
+<section id="article-laptop-price-predictor" class="article-section">
+  <h1>Laptop Price Predictor: How We Built It</h1>
+  <p>The Laptop Price Predictor is a machine learning project that helps users estimate the cost of a laptop based on various features like brand, processor type, RAM size, and storage options.</p>
+  <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop Prediction Model">
+  <p>We used a Random Forest Regressor to train our model, achieving excellent accuracy. Dataset sourced from <a href="https://www.kaggle.com" target="_blank">Kaggle</a>.</p>
+  <h2>Key Features</h2>
+  <ul>
+    <li>Real-time predictions</li>
+    <li>Responsive UI using Streamlit</li>
+    <li>5000+ data points across various brands</li>
+  </ul>
+  <p>Check out the full code on <a href="https://github.com/RIDDHIMA1SHARMA/Navigating-the-Laptop-Landscape-for-students" target="_blank">GitHub</a>!</p>
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+
+<!-- Article 2: Gestational Diabetes Prediction -->
+<section id="article-gestational-diabetes" class="article-section">
+  <h1>Early Prediction of Gestational Diabetes Mellitus (GDM)</h1>
+  <p>Gestational Diabetes Mellitus is a health issue affecting pregnant women worldwide. Our project predicts GDM early using machine learning.</p>
+  <img src="https://images.unsplash.com/photo-1588776814546-ec77dbb8c1cc" alt="Medical Prediction">
+  <p>We used Logistic Regression and Decision Trees for high sensitivity and specificity.</p>
+  <h2>Highlights</h2>
+  <ul>
+    <li>Data from real-world clinical records</li>
+    <li>Feature Engineering</li>
+    <li>Evaluation using ROC-AUC curve</li>
+  </ul>
+  <p>Code available on <a href="https://github.com/RIDDHIMA1SHARMA/Prediction_Of_Gestational_Diabetes_Mellitus" target="_blank">GitHub</a>.</p>
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+
+<!-- Article 3: Personal Portfolio Website -->
+<section id="article-portfolio-website" class="article-section">
+  <h1>Building My Personal Portfolio Website</h1>
+  <p>I created a modern responsive website to showcase my projects, skills, and achievements to recruiters and collaborators.</p>
+  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Portfolio Website">
+  <h2>Highlights</h2>
+  <ul>
+    <li>Built with HTML5, CSS3, JavaScript</li>
+    <li>Minimalist, mobile-friendly UI</li>
+    <li>Focused on performance and SEO</li>
+  </ul>
+  <p>Live version <a href="https://your-demo-link.com" target="_blank">here</a>!</p>
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+
+<!-- Article 4: Smart Irrigation System -->
+<section id="article-smart-irrigation" class="article-section">
+  <h1>Smart Irrigation System: IoT-Based Farming Solution</h1>
+  <p>This system automatically waters plants based on real-time soil moisture sensing, saving water and improving crop health.</p>
+  <img src="https://images.unsplash.com/photo-1581091012184-7b51b0c7a896" alt="Smart Irrigation">
+  <h2>Key Features</h2>
+  <ul>
+    <li>Soil monitoring with moisture sensors</li>
+    <li>Automatic pump control</li>
+    <li>Dashboard for monitoring and manual control</li>
+  </ul>
+  <p>Full details on <a href="https://github.com/yourgithubrepo" target="_blank">GitHub</a>.</p>
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+<!-- New Article Sections -->
+
+<!-- Article 5: Detection of Diabetic Retinopathy -->
+<section id="article-diabetic-retinopathy" class="article-section">
+  <h1>Detection of Diabetic Retinopathy Using Deep Learning</h1>
+  <p>Diabetic Retinopathy is a leading cause of vision loss. Our project uses convolutional neural networks (CNNs) to classify retinal images into severity levels.</p>
+  <img src="https://images.unsplash.com/photo-1588776814546-ec77dbb8c1cc" alt="Diabetic Retinopathy Detection">
+  <h2>Key Features</h2>
+  <ul>
+    <li>Dataset: APTOS 2019 Blindness Detection from Kaggle</li>
+    <li>Preprocessing with CLAHE and Image Augmentation</li>
+    <li>Transfer Learning using EfficientNet-B0</li>
+    <li>Achieved over 85% classification accuracy</li>
+  </ul>
+  <p>Check the full code on <a href="https://github.com/yourgithubrepo" target="_blank">GitHub</a>!</p>
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+
+<!-- Article 6: Real World Routing Optimization -->
+<section id="article-routing-optimization" class="article-section">
+  <h1>Real World Routing Optimization Problem</h1>
+  <p>Routing problems arise in logistics, transportation, and supply chain management. This project focuses on finding optimal paths with constraints like traffic, distance, and time.</p>
+  <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1" alt="Routing Optimization">
+  <h2>Highlights</h2>
+  <ul>
+    <li>Vehicle Routing Problem (VRP) and Traveling Salesman Problem (TSP)</li>
+    <li>Optimization using Genetic Algorithms and Greedy Heuristics</li>
+    <li>Visualization of optimal routes using Dijkstra’s and A* algorithms</li>
+    <li>Real-world datasets with multiple delivery points</li>
+  </ul>
+  <p>Source code is available <a href="https://github.com/yourgithubrepo" target="_blank">here</a>.</p>
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+
+<!-- New Article Sections -->
+
+<!-- Article 7: IoT Based Smart Shopping Cart -->
+<section id="article-smart-shopping-cart" class="article-section">
+  <h1>IoT Based Smart Shopping Cart System</h1>
+  <p>Our Smart Shopping Cart uses RFID technology and IoT to automate the checkout process, eliminating long queues and manual billing.</p>
+  <img src="https://images.unsplash.com/photo-1599058917212-6ad9a7f91e08" alt="Smart Shopping Cart">
+  <h2>Key Features</h2>
+  <ul>
+    <li>RFID tags for each product</li>
+    <li>Automatic total calculation</li>
+    <li>Payment via mobile app integration</li>
+    <li>Reduces shopping time by 30%</li>
+  </ul>
+  <p>Explore the project on <a href="https://github.com/yourgithubrepo" target="_blank">GitHub</a>!</p>
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+
+<!-- Article 8: Electricity Bill Management System -->
+<section id="article-electricity-bill" class="article-section">
+  <h1>Electricity Bill Management System</h1>
+  <p>Manage and predict electricity consumption with our intelligent bill management system, empowering users to save energy and costs.</p>
+  <img src="https://images.unsplash.com/photo-1581091870622-25c507aa1efc" alt="Electricity Bill System">
+  <h2>Highlights</h2>
+  <ul>
+    <li>Real-time energy monitoring</li>
+    <li>Bill prediction based on usage patterns</li>
+    <li>Custom alerts for over-usage</li>
+    <li>Historical data visualization</li>
+  </ul>
+  <p>Codebase available <a href="https://github.com/yourgithubrepo" target="_blank">here</a>.</p>
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+
+<!-- Article 9: Smart IoT Based Agriculture System -->
+<section id="article-smart-agriculture" class="article-section">
+  <h1>Smart IoT Based Agriculture System</h1>
+  <p>This system empowers farmers to make data-driven decisions for better crop management using IoT sensors and cloud dashboards.</p>
+  <img src="https://images.unsplash.com/photo-1593627991431-7be807d654b3" alt="Smart Agriculture System">
+  <h2>Key Features</h2>
+  <ul>
+    <li>Soil moisture, temperature, and humidity monitoring</li>
+    <li>Automated irrigation control</li>
+    <li>Real-time analytics dashboard</li>
+    <li>Weather forecast integration</li>
+  </ul>
+  <p>Full project details are on <a href="https://github.com/yourgithubrepo" target="_blank">GitHub</a>.</p>
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+<!-- Article 10: Skin Cancer Detection System -->
+<section id="article-skin-cancer" class="article-section">
+  <h1>Skin Cancer Detection System</h1>
+  <p>Our system leverages deep learning to accurately detect early signs of skin cancer from dermoscopic images, aiming to assist dermatologists and save lives.</p>
+  <img src="https://images.unsplash.com/photo-1588776814546-ecde284cf5f2" alt="Skin Cancer Detection">
+  <h2>Highlights</h2>
+  <ul>
+    <li>Convolutional Neural Network (CNN) model trained on dermoscopic datasets</li>
+    <li>Accuracy over 90% on validation data</li>
+    <li>User-friendly web app for image upload and instant diagnosis</li>
+    <li>Real-time prediction and result visualization</li>
+  </ul>
+  <p>Learn more and access the code <a href="https://github.com/yourgithubrepo" target="_blank">here</a>.</p>
+  <a class="back-button" onclick="goBack()">← Back to Projects</a>
+</section>
+
+
+<script>
+  function showSection(id) {
+    const sections = document.querySelectorAll('.projects, .article-section');
+    sections.forEach(section => section.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+
+  function goBack() {
+    const sections = document.querySelectorAll('.article-section');
+    sections.forEach(section => section.style.display = 'none');
+    document.getElementById('projects').style.display = 'grid';
+    window.scrollTo(0, 0);
+  }
+</script>
+
+</body>
+</html>
